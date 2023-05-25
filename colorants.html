@@ -1,0 +1,27 @@
+<ul>
+  <!-- show fdc colorants -->
+  [ebc_acf_conditional field="fdc_colorants"]
+  <li>
+    <a href="/product/liquid-colorant/">FD&C colorants </a> can be added to this
+    base
+  </li>
+  [/ebc_acf_conditional]
+
+  <!--- show minierla colorants -->
+  [ebc_acf_conditional field="mineral_colorants"]
+  <li>Mineral colorants can be added to this base</li>
+  [/ebc_acf_conditional]
+
+  <!-- no on the colorants -->
+  [ebc_acf_conditional field="colorant_not_recommended"]
+  <li>Colorant is not recommended for this base</li>
+  [/ebc_acf_conditional]
+
+  <!-- recommendedations -->
+  <li>We recommend:</li>
+  <ul>
+    [ebc_acf_relationship field="linked_colorants" display="list"]
+  </ul>
+</ul>
+
+[acf field="extra_info_b"]

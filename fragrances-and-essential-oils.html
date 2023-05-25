@@ -1,0 +1,35 @@
+<ul>
+    <li>
+        Use a <a href="/product/vanilla-stabilizer/">Vanilla Stabilizer</a> for
+fragrances containing vanillin to slow down the natural darkening process</li>
+    </li>
+    <li>Fragrance Load: [acf field="fragrance_load"]</li>
+
+    <!-- conditional to display "no solubilizer needed"-->
+    [ebc_acf_conditional field="no_solubilizer" mode="show"]
+    <li>No solubilizer needed</li>
+    [/ebc_acf_conditional]
+
+
+    <!-- conditional to display solubilizer text and instructions -->
+    [ebc_acf_conditional field="insert_solubilizer" mode="show"]
+    <li>
+        A solubilizer, such as [ebc_acf_relationship field="recommended_solubilizer"], is needed if adding fragrance or essential oils
+    </li>
+    <ul>
+        <li>Pre-mix solubilizer with oil before adding to the base</li>
+        <li>
+            Start at a [acf field="starting_solubilizer_ratio"] ratio, adding more until base is stabilized. Up to a [acf field="maximum_solubilizer_ratio"] ratio.
+        </li>
+    </ul>
+    [/ebc_acf_conditional]
+
+ 
+</ul>
+
+[acf field="extra_info_a"]
+
+
+
+
+

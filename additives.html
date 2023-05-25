@@ -1,0 +1,18 @@
+<ul>
+  [ebc_acf_conditional field="water_based"]
+  <li>Use water-based additives only</li>
+  [/ebc_acf_conditional] [ebc_acf_conditional field="oil_based"]
+  <li>Use oil-based additives only</li>
+  [/ebc_acf_conditional] [ebc_acf_conditional field="no_additives"]
+  <li>We do not recommended incorporating additives in this base</li>
+  [/ebc_acf_conditional] [ebc_acf_conditional field="no_additives" mode="hide"]
+  <li>Fold in additives until mixture is homogeneous</li>
+  [/ebc_acf_conditional] [ebc_acf_conditional field="no_additives" mode="hide"]
+  <li>We recommend:</li>
+  <ul>
+    [ebc_acf_taxonomy field="additive_categories" display="list"]
+  </ul>
+  [/ebc_acf_conditional]
+</ul>
+
+[acf field="extra_info_c"]

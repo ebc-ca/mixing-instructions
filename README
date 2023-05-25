@@ -1,0 +1,5 @@
+# Mixing Instructions HTML
+
+This repo exists because Elementor can be finicky with the WSIWYG editor. It is much safer to use an HTML block.
+
+These file represent the html that should be put into each of their respective HTML blocks in the Mixing Instructions tabs.
